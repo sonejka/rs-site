@@ -341,12 +341,14 @@ section {
 
 /**************   footer   ******************/
 footer {
-    min-height: 280px;
     background: #000;
     text-align: center;
 }
 
 .footer-nav-wrap {
+    position: relative;
+    max-width: 960px;
+    margin:0 auto;
     padding: 2em 0;
     overflow: hidden;
 }
@@ -390,4 +392,15 @@ footer {
     width: 25px;
     margin-right: 10px;
     vertical-align: bottom;
+}
+
+.footer-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url("../images/logo_rs.svg") no-repeat 0 0;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
 }
