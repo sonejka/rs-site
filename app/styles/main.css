@@ -105,7 +105,7 @@ header {
 }
 
 .logo {
-    display: block;
+    display: inline-block;
     position: absolute;
     top: 50%;
     left: 5px;
@@ -228,21 +228,12 @@ header {
 /**************    banner   ******************/
 .banner h1 {
     color: #ad0f00;
-    font-size: 400%;
+    font-size: 300%;
     font-weight: 100;
     letter-spacing: -1px;
     line-height: 1.1em;
     font-family: 'Roboto Condensed', sans-serif;
 }
-
-.banner h2 {
-    margin: 0;
-    color: #444;
-    font-size: 260%;
-    line-height: 1.4em;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 .banner p {
     color: #444;
     padding: 0;
@@ -251,14 +242,17 @@ header {
 }
 .location {
     display: inline-block;
-    padding-left: 32px;
+    padding-left: 1.3em;
+    line-height: 1.3em;
     background: url("../images/icon-location.svg") no-repeat 0 0;
-    background-size: 30px 40px;
+    background-size: contain;
+    color: #bbb;
+    margin-left: 1em;
 }
 /**************    section  ******************/
 section {
     max-width: 960px;
-    padding: 1em 0;
+    padding: .5em 0;
     margin: 0 auto;
     box-sizing: border-box;
     text-align: left;
@@ -269,11 +263,12 @@ section {
     display: inline-block;
     background: url("../images/icon-coffee.svg") no-repeat 0 0;
     background-size: contain;
-    width: 42px;
-    height: 32px;
+    width: 30px;
+    height: 26px;
 }
 .schedule-full {
     list-style-type: none;
+    padding-bottom: 4em;
 }
 
 .schedule-full li {
