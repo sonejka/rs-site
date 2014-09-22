@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>RS | Home</title>
+    <title>RS | Главная</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="favicon.ico">
@@ -32,9 +32,9 @@
         <a id="nav-btn" onclick="toggleClass()" href="javascript:void(0);" class="nav-btn">&#x2261;</a>
         <nav id="nav" class="vertical-mode-closed">
             <ul class="nav">
-                <li class="active"><a href="index.html">About RS</a></li>
-                <li><a href="hall-of-fame.html">Hall of Fame</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li><a href="hall-of-fame.html">Зал славы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
 
@@ -42,19 +42,17 @@
 
     </div>
 </header>
-<section class="banner text-right">
+<section class="banner">
+
     <h1>The Rolling Scopes #12</h1>
 
-    <h2>26th September 2014 <a class="location" href="http://imaguru.co/ru">imaguru.co</a></h2>
+    <h2>26 сентября, 2014<a class="location" href="http://imaguru.co/ru">imaguru.co</a></h2>
 
-    <p><a class="register-button" href="#">Register Now</a></p>
+    <p><a class="register-button" href="#"><i class="fa fa-check-square-o"></i> Зарегистрироваться</a></p>
 
 </section>
 
 <section class="schedule">
-
-    <h2>Schedule</h2>
-
     <ul class="schedule-full">
         <li>
             <img class="speaker-photo" src="images/unknown_speaker.jpg" alt="photo speaker"/>
@@ -115,27 +113,34 @@
         </li>
     </ul>
 </section>
-<section class="schedule">
+<section>
+    <h2>Место проведения</h2>
+    <a class="map" href="https://goo.gl/maps/QemGL"><img src="images/imaguru_map.png" alt="Imaguru map"/></a>
 
-    <h2>Venue</h2>
+    <p>IMAGURU бизнес-клуб | стартап-хаб </p>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2351.311677365298!2d27.537312000000004!3d53.89066400000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfe17450d075%3A0xf2ce80bc1380c57e!2z0JHQuNC30L3QtdGBINC60LvRg9CxIEltYWd1cnU!5e0!3m2!1sru!2s!4v1411133373034"
-            width="600" height="450" frameborder="0" style="border:0"></iframe>
+    <p>Минск, ул. Фабрициуса, 4 </p>
 
-
+    <p>ст.м. Институт Культуры</p>
 </section>
+
+<section>
+    <h2>Контакты</h2>
+    <p>Мы всегда рады сотрудничеству. <br /> Если у Вас есть какие-либо предложения или пожелания, пожалуйста, напишите нам на электроный ящик
+        <a name="contacts" href="mailto:rolling.scopes@gmail.com">rolling.scopes@gmail.com</a>
+    </p>
+</section>
+
 <footer>
     <div class="footer-nav-wrap">
-        <p>Follow Us</p>
+        <p>Присоединяйтесь к нам в социальных сетях</p>
         <ul class="contacts-nav">
+            <li><a href="https://www.facebook.com/groups/TheRollingScopes/"><i class="fa fa-facebook"></i></a></li>
             <li><a href="http://vk.com/therollingscopes"><i class="fa fa-vk"></i></a></li>
             <li><a href="https://twitter.com/rollingscopes"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://www.youtube.com/user/therollingscopes"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="https://www.facebook.com/groups/TheRollingScopes/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="mailto:rolling.scopes@gmail.com"><i class="fa fa-envelope"></i></a></li>
         </ul>
-        <a href=href="http://rollingscopes.com/" class="footer-logo"></a>
-
+        <a href="http://rollingscopes.com/" class="footer-logo"></a>
         <p class="copy">&copy; 2014 The Rolling Scopes </p>
     </div>
 </footer>
@@ -167,5 +172,7 @@
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
+
+
 </body>
 </html>

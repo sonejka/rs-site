@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    color: #ad0f00;
+    color: #f0194b;
     text-decoration: none;
 }
 
@@ -93,6 +93,17 @@ h6 {
     margin: 1em 0;
 }
 
+section h1 {
+
+    color: #19b6f0;
+    font-size: 300%;
+    font-weight: 100;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+}
+
 /*************  header ************/
 header {
     height: 50px;
@@ -151,7 +162,7 @@ header {
 }
 
 .nav li a:hover {
-    color: #19b6f0;
+    color: #f0bf19;
     text-decoration: none;
 }
 
@@ -231,25 +242,24 @@ header {
 }
 
 .vertical-mode ul li a:hover {
-    color: #fff;
+    color: #f0bf19;
     text-decoration: none;
 }
 
 /**************    banner   ******************/
+.banner {
+    padding: .5em 1em;
+    text-align: right;
+}
+
 .banner h1 {
-    color: #19b6f0;
-    font-size: 300%;
-    font-weight: 100;
-    letter-spacing: -1px;
-    line-height: 1.1em;
-    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: .3em;
 }
 
 .banner p {
     color: #444;
-    padding: 0;
+    margin: 0;
     font-size: 180%;
-    line-height: 1.5em;
 }
 
 .location {
@@ -260,12 +270,13 @@ header {
     background-size: .9em;
     color: #bbb;
     margin-left: 1em;
+    font-weight: 100;
 }
 
 /**************    section  ******************/
 section {
     max-width: 960px;
-    padding: .5em 0;
+    padding:.5em 1em;
     margin: 0 auto;
     box-sizing: border-box;
     text-align: left;
@@ -297,6 +308,8 @@ section {
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     background: #f8f8f8;
+    margin: 0 -1em;
+    padding: .6em 1em .6em 136px;
 }
 
 .schedule-full .break h3 {
@@ -304,7 +317,7 @@ section {
 }
 
 .schedule-full .time {
-    color: #bbb;
+    color: #19b6f0;
     font-weight: bold;
     font-size: 130%;
 }
@@ -319,12 +332,31 @@ section {
     left: 0;
 }
 
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.map img {
+    width:549px;
+    float: left;
+    margin:0 1em .5em 0;
+}
+
 /**************   speakers-list  ******************/
 
 .speakers-list {
-    display: flex;
+    list-style-type: none;
+
+    -webkit-flex-flow: wrap row;
     flex-flow: row wrap;
     list-style-type: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 
 .speakers-list li {
@@ -356,23 +388,6 @@ section {
     font-size: 90%;
 }
 
-/**************   speakers-list-detailed  ******************/
-
-.speakers-list-detailed li {
-    position: relative;
-    min-height: 100px;
-    padding: 1em .5em 1em 130px;
-    border-bottom: 1px solid #eee;
-
-}
-
-.speakers-list-detailed .speaker-photo {
-    position: absolute;
-    top: 1em;
-    left: 0;
-    width: 100px;
-}
-
 .socialize {
     display: inline-block;
     margin-left: .6em;
@@ -386,13 +401,13 @@ section {
 }
 
 .socialize a:hover {
-    color: #ad0f00;
+    color: #f0194b;
 }
 
 /**************   footer   ******************/
 footer {
     background: #000;
-    color: #fff;
+    color: #aaa;
     text-align: center;
     margin-top: 50px;
 }
@@ -402,22 +417,22 @@ footer {
     max-width: 960px;
     min-height: 100px;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 1em;
     text-align: left;
 }
-
+/**************   contacts-nav   ******************/
 .contacts-nav li {
     display: inline-block;
     padding: 1em 1em 1em 0;
 }
 
 .contacts-nav a {
-    color: #fff;
+    color: #ccc;
     font-size: 230%;
 }
 
 .contacts-nav a:hover {
-    color: #19b6f0;
+    color: #f0bf19;
     text-decoration: none;
 }
 
@@ -441,9 +456,8 @@ footer {
 
 .register-button {
     display: inline-block;
-    padding: .4em .5em .4em 2.3em;
-    background: #f8f8f8 url("../images/icon-registr.svg") no-repeat 10px center;
-    background-size: 1.2em;
+    padding: .4em .5em;
+    background: #f8f8f8;
     line-height: 1em;
     border: 1px solid #eee;
     border-radius: 5px;
