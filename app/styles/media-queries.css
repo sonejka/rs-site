@@ -57,6 +57,10 @@
         font-size: 200%;
     }
 
+    .banner h1 {
+        text-align: center;
+    }
+
     .banner h2 {
         font-size: 100%;
     }
@@ -107,8 +111,18 @@
     }
 
     .speakers-list li {
-        width: 140px;
-        padding:.5em;
+        width: 180px;
+        padding: .5em;
+    }
+
+    .speakers-list {
+        margin: 0 -1em;
+    }
+}
+
+@media only screen and (max-width: 20em) {
+    .speakers-list li {
+        width: 155px;
     }
 }
 
@@ -181,9 +195,15 @@
     h3 {
         page-break-after: avoid;
     }
+
+    p {
+        line-height: 1.3;
+    }
+
     header, footer, .register-button, .icon-coffee, .location, .socialize {
         display: none;
     }
+
     .map img {
         float: left;
     }
@@ -191,11 +211,17 @@
     .banner h1 {
         font-size: 200%;
     }
+
     .banner h2 {
         font-size: 100%;
     }
+
     .speakers-list li {
         width: 160px;
+    }
+
+    .schedule-full li {
+        padding: .3em 0 .3em 120px;
     }
 
     .speakers-list li h3 {
