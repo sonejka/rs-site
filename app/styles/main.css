@@ -106,7 +106,7 @@ section h1 {
 
 /*************  header ************/
 header {
-    min-height: 50px;
+    height: 50px;
     background: #000;
     text-align: center;
 }
@@ -138,10 +138,6 @@ header {
     width: 100px;
     border-radius: 50%;
     border: 1px solid #bbb;
-}
-
-.rs-tag {
-    color: #f0bf19;
 }
 
 /**************    navigation  ******************/
@@ -280,7 +276,7 @@ header {
 /**************    section  ******************/
 section {
     max-width: 960px;
-    padding: .5em 1em;
+    padding:.5em 1em;
     margin: 0 auto;
     box-sizing: border-box;
     text-align: left;
@@ -342,9 +338,9 @@ iframe {
 }
 
 .map img {
-    width: 549px;
+    width:549px;
     float: left;
-    margin: 0 1em .5em 0;
+    margin:0 1em .5em 0;
 }
 
 /**************   speakers-list  ******************/
@@ -366,7 +362,7 @@ iframe {
 .speakers-list li {
     width: 220px;
     margin: 0 auto;
-    padding:.5em;
+    padding: 1em;
     border-radius: 5px;
     box-sizing: border-box;
     text-align: center;
@@ -424,7 +420,6 @@ footer {
     padding: 1em;
     text-align: left;
 }
-
 /**************   contacts-nav   ******************/
 .contacts-nav li {
     display: inline-block;
@@ -448,8 +443,8 @@ footer {
     display: block;
     background: url("../images/logo_rs.svg") no-repeat 0 0;
     background-size: contain;
-    width: 289px;
-    height: 231px;
+    width: 309px;
+    height: 261px;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
